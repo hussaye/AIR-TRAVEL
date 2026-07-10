@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Agence De Voyage</title>
 </head>
 <script src="script.js"></script>
@@ -66,138 +67,91 @@
    </section>
 
    <!-- section destination -->
-    <section id="popular-destination">
-        <h1 class="title">destinations populaires</h1>
-        <div class="content">
-            <!--box-->
-            <div class="box">
-                <img src="data:image/jpeg;base64,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" alt="Brésil">
-                <div class="content">
-                    <div>
-                        <h4>Brazil</h4>
-                        <p>Le Brésil offre une ambiance chaleureuse, festive et accueillante. Entre plages paradisiaques, musique entraînante, forêts tropicales et villes animées, chaque voyage devient une aventure riche en découvertes et en émotions.</p>
-                        <p>Brésil possède des merveilles naturelles uniques.</p>
-                        <a href="#">Lire Plus</a>
-                    </div>
+   <section id="popular-destination" class="container py-5">
+    <h2 class="text-center mb-5 text-info fw-bold">Destinations populaires</h2>
 
+    <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/bresil.jpg" class="card-img-top" alt="Brésil">
+                <div class="card-body">
+                    <h5 class="card-title">Brésil</h5>
+                    <p class="card-text">
+                        Le Brésil séduit par ses plages, sa culture et ses paysages exceptionnels.
+                    </p>
+                    <a href="#" class="btn btn-info text-white">Lire plus</a>
                 </div>
             </div>
-            <!-- box -->
-            <!-- box -->
-            <div class="box">
-                <img src="assets/paris.jpg" alt="Paris">
-                <div class="content">
-                    <div>
-                        <h4>Paris</h4>
-                        <p>Réputée pour son élégance, son patrimoine historique et son atmosphère romantique, elle attire chaque année des millions de visiteurs venus du monde entier.</p>
-                        <p>Paris offre de magnifiques promenades le long de ses quais et de nombreux ponts chargés d'histoire.</p>
-                        <a href="#">Lire Plus</a>
-                    </div>
-
-                </div>
-            </div>
-            <!-- box -->
-             <!--box-->
-            <div class="box">
-                <img src="assets/zanzibar.jpg" alt="Zanzibar">
-                <div class="content">
-                    <div>
-                        <h4>Zanzibar</h4>
-                        <p>Zanzibar offre une ambiance paisible, exotique et romantique. Entre le bruit des vagues, les parfums d'épices, les plages idylliques et la richesse culturelle de l'archipel, chaque séjour est une invitation à la détente et à l'émerveillement.</p>
-                        <p>Zanzibar est connue pour la culture du clou de girofle, de la cannelle, de la vanille et de la noix de muscade.</p>
-                        <a href="#">Lire Plus</a>
-                    </div>
-
-                </div>
-            </div>
-            <!-- box -->
-             <!--box-->
-            <div class="box">
-                <img src="assets/thailand.jpg" alt="Thailand">
-                <div class="content">
-                    <div>
-                        <h4>Thailand</h4>
-                        <p>Une destination fascinante qui séduit les voyageurs par ses paysages exotiques, sa culture riche et son accueil chaleureux. Surnommée « le pays du sourire », elle offre un mélange harmonieux de traditions ancestrales et de modernité.</p>
-                        <p>La cuisine thaïlandaise est appréciée dans le monde entier pour ses saveurs équilibrées mêlant épices, herbes aromatiques et produits frais.</p>
-                        <a href="#">Lire Plus</a>
-                    </div>
-
-                </div>
-            </div>
-            <!-- box -->
-             <!--box-->
-            <div class="box">
-                <img src="assets/italie.jpg" alt="Italie">
-                <div class="content">
-                    <div>
-                        <h4>Italia</h4>
-                        <p>L'Italie est une destination incontournable réputée pour son patrimoine historique, sa gastronomie raffinée et ses paysages spectaculaires. Entre villes d'art, côtes méditerranéennes et culture riche, elle promet une expérience de voyage authentique et inoubliable.</p>
-                        <p>L'Italie est le pays de la pizza, des pâtes, des glaces artisanales et de nombreuses spécialités régionales qui séduisent les gourmands du monde entier.</p>
-                        <a href="#">Lire Plus</a>
-                    </div>
-
-                </div>
-            </div>
-            <!-- box -->
-             <!--box-->
-            <div class="box">
-                <img src="assets/seoul.jpg" alt="Seoul">
-                <div class="content">
-                    <div>
-                        <h4>Seoul</h4>
-                        <p>Séoul est une métropole fascinante où modernité et tradition se rencontrent harmonieusement. Entre palais historiques, quartiers animés, cuisine savoureuse et innovations technologiques, la capitale sud-coréenne offre une expérience urbaine riche en découvertes et en émotions.</p>
-                        <p>Les quartiers comme Myeongdong, Hongdae et Gangnam sont célèbres pour leurs boutiques, cafés, restaurants et animations nocturnes.</p>
-                        <a href="#">Lire Plus</a>
-                    </div>
-
-                </div>
-            </div>
-            <!-- box -->
-             <!--box-->
-            <div class="box">
-                <img src="assets/seoul.jpg" alt="USA">
-                <div class="content">
-                    <div>
-                        <h4>USA</h4>
-                        <p>L'une des destinations les plus populaires au monde, offrant une incroyable diversité de paysages, de cultures et d'expériences. Des gratte-ciel impressionnants aux vastes parcs naturels, chaque région possède son propre charme.</p>
-                        <p>Les États-Unis sont un centre mondial de la musique, du cinéma, de la mode et des nouvelles technologies. Ils accueillent également de nombreux événements sportifs et culturels de renommée internationale.</p>
-                        <a href="#">Lire Plus</a>
-                    </div>
-
-                </div>
-            </div>
-            <!-- box -->
-             <!--box-->
-            <div class="box">
-                <img src="assets/tokyo.jpg" alt="Tokyo">
-                <div class="content">
-                    <div>
-                        <h4>Tokyo</h4>
-                        <p>Tokyo est la capitale du Japon et l'une des villes les plus fascinantes au monde. Elle séduit les voyageurs par son mélange unique de traditions ancestrales, de technologies de pointe et d'une culture urbaine dynamique.</p>
-                        <p>Le magnifique Temple Sensō-ji, l'un des plus anciens temples de la ville.</p>
-                        <a href="#">Lire Plus</a>
-                    </div>
-
-                </div>
-            </div>
-            <!-- box -->
-             <!--box-->
-            <div class="box">
-                <img src="assets/qatar.jpg" alt="Qatar">
-                <div class="content">
-                    <div>
-                        <h4>Qatar</h4>
-                        <p>est un pays moderne situé sur la péninsule arabique, connu pour son développement spectaculaire, son architecture futuriste et son mélange harmonieux entre traditions arabes et innovation. Malgré sa petite taille, le Qatar est devenu l'une des destinations les plus prestigieuses du Golfe.</p>
-                        <p>La capitale, Doha, est célèbre pour ses gratte-ciel élégants et son front de mer spectaculaire.</p>
-                        <a href="#">Lire Plus</a>
-                    </div>
-
-                </div>
-            </div>
-            <!-- box -->
         </div>
 
-    </section>
+        <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/Paris.jpg" class="card-img-top" alt="Paris">
+                <div class="card-body">
+                    <h5 class="card-title">Paris</h5>
+                    <p class="card-text">
+                        La ville lumière est célèbre pour son patrimoine historique et son romantisme.
+                    </p>
+                    <a href="#" class="btn btn-info text-white">Lire plus</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/Zanzibar.jpg" class="card-img-top" alt="Zanzibar">
+                <div class="card-body">
+                    <h5 class="card-title">Zanzibar</h5>
+                    <p class="card-text">
+                        Découvrez ses plages paradisiaques et sa richesse culturelle.
+                    </p>
+                    <a href="#" class="btn btn-info text-white">Lire plus</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/Thailand.jpg" class="card-img-top" alt="Thaïlande">
+                <div class="card-body">
+                    <h5 class="card-title">Thaïlande</h5>
+                    <p class="card-text">
+                        Une destination réputée pour ses temples, ses plages et sa gastronomie.
+                    </p>
+                    <a href="#" class="btn btn-info text-white">Lire plus</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/italie.jpg" class="card-img-top" alt="Italie">
+                <div class="card-body">
+                    <h5 class="card-title">Italie</h5>
+                    <p class="card-text">
+                        Entre histoire, gastronomie et paysages magnifiques.
+                    </p>
+                    <a href="#" class="btn btn-info text-white">Lire plus</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/Seoul.jpg" class="card-img-top" alt="Séoul">
+                <div class="card-body">
+                    <h5 class="card-title">Séoul</h5>
+                    <p class="card-text">
+                        Une ville où tradition et modernité se rencontrent.
+                    </p>
+                    <a href="#" class="btn btn-info text-white">Lire plus</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
     <!-- section contact-->
      <section id="contact">
         <h1 class="title">Contact</h1>

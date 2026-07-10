@@ -226,60 +226,31 @@ header .logo a span{
     font-weight: bold;
 }
 
-/* Destination CSS */
 #popular-destination{
-    padding:0 10%;
-    margin: 50px;
-}
-#popular-destination .content{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 32px;
-}
-#popular-destination .content .box{
-    overflow: hidden;
-    position: relative;
-    height: 250px;
-    transition: 0.5s;
-}
-#popular-destination .content .box img{
-    height:230px;
-    width:100%;
-    object-fit:cover;
-}
-.box .content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    transform: translateX(100%);
-    transition: 0.5s;
-}
-.box .content h4{
-    font-size:25px;
-    margin-bottom:10px;
+    margin-top:80px;
 }
 
-.box .content p{
-    padding:2px;
-    font-size:12px;
+.card img{
+    height:220px;
+    object-fit:cover;
 }
-.box .content p:nth-child(3){
-    margin-bottom: 25px;
+
+.card{
+    border:none;
+    border-radius:12px;
 }
-.box .content a{
-    margin-top: 60px;
-    padding: 10px 60px;
-    border: 2px solid #29d9d5;
-    font-weight: bold;
+
+.card-title{
+    font-weight:bold;
 }
-.box:hover{
-    box-shadow: 0 0 10px #29d9d5;
+
+.btn-info{
+    background:#29d9d5;
+    border:none;
 }
-.box:hover .content{
-    transform: translateX(0);
+
+.btn-info:hover{
+    background:#20bdb8;
 }
 /* Contact CSS */
 #contact{
